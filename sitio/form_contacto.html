@@ -10,7 +10,7 @@
         <h1>Ejemplo de formulario de contacto</h1>
     </header>
     <main>
-        <form action="">
+        <form action="respuesta.html">
             <fieldset>
                 <legend>Datos personales</legend>
                 <label for="nombre">Nombre y apellido: </label>
@@ -27,6 +27,29 @@
                 <label for="opcion1">Python</label>
                 <input type="checkbox" name="opcion2"> 
                 <label for="opcion2">Java</label>
+                <input type="checkbox" name="opcion3"> 
+                <label for="opcion3">C++</label>
+                <br>
+                <br>
+                <label for = "turno"> Turno</label>
+                <select name="turno">
+                    <option value="valor1">Mañana</option>
+                    <option value="valor2">Tarde</option>
+                    <option value="valor3">Noche</option> <!--por defecto aparece primero Mañana-->
+                </select>
+                <br>
+                <br>
+                <label for = "turno"> Turno opción 2</label>
+                <select name="turno">
+                    <option value="valor1">Mañana</option>
+                    <option value="valor2">Tarde</option>
+                    <option value="valor3" selected = "True">Noche</option> <!-- aparece primero Noche--> 
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Acciones del formulario</legend>
+                <input type="submit" value="Enviar"> <!--NO PUEDE FALTAR-->
+                <input type="reset" value="Borrar datos">
             </fieldset>
         </form>
     </main>
